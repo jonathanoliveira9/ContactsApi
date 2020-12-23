@@ -40,5 +40,7 @@ module ContactsApi
         resource '*', headers: :any, methods: %i(get post patch put options head)
       end
     end
+
+    config.middleware.use Rack::Attack
   end
 end
