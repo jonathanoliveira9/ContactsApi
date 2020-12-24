@@ -28,3 +28,32 @@ GET localhost:3000/api/v1/contacts
 
 ```
 
+## HTTP Responses
+Examples below:
+```
+GET Contact List
+  - localhost:3000/api/v1/contacts
+GET Contact
+  - localhost:3000/api/v1/contacts/1
+POST Create Contact
+  - localhost:3000/api/v1/contacts.json
+  Body:
+        {
+        "name": "text",
+        "email": "tes@tra.cm",
+        "phone": "45"
+        
+        }
+PUT Update Contact
+  - localhost:3000/api/v1/contacts/<id>
+  Body:
+        {
+        "name": "text",
+        "email": "tes@tra.cm",
+        "phone": "45"
+        
+        }
+
+DELETE Delete Contact
+   - localhost:3000/api/v1/contacts/<id>
+```
