@@ -4,7 +4,7 @@
 ContactsAPi is a application to learning about API.
 
 ## Authentication
-Access to the API is grantend by providing your email and token. You can use Postman. Example bellow.
+Access to the API is grantend by providing your email and token that was created an user via console. You can use Postman. Example bellow.
 ```
 Headers
 Key                   Value
