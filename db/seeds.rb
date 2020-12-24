@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Generate Contacts
+User.create(email: Faker::Internet.email, name: Faker::Name.name ,password: 123456)
 user_id = User.last.id
 100.times do |_|
   Contact.create(name: Faker::Name.name, email: Faker::Internet.email, phone: Faker::Number.number(digits: 10), description: Faker::Lorem.sentences, user_id: user_id)
