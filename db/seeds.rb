@@ -10,5 +10,7 @@
 User.create(email: Faker::Internet.email, name: Faker::Name.name ,password: 123456)
 user_id = User.last.id
 100.times do |_|
-  Contact.create(name: Faker::Name.name, email: Faker::Internet.email, phone: Faker::Number.number(digits: 10), description: Faker::Lorem.sentences, user_id: user_id)
+  contact = Contact.create(name: Faker::Name.name, email: Faker::Internet.email, phone: Faker::Number.number(digits: 10), description: Faker::Lorem.
+  sentences, user_id: user_id)
+  Address.create(street: Faker::Address.street_name, city: Faker::Address.city, state:  Faker::Address.state , zip_code: Faker::Address.zip_code, contact_id: contact.id)
 end
