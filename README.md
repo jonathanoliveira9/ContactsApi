@@ -30,6 +30,7 @@ GET localhost:3000/api/v1/contacts
 
 ## HTTP Responses
 Examples below:
+### Model: Contact
 ```
 GET Contact List
   - localhost:3000/api/v1/contacts
@@ -59,3 +60,29 @@ PUT Update Contact
 DELETE Delete Contact
    - localhost:3000/api/v1/contacts/<id>
 ```
+### Model: Address
+Address belongs to contact.
+```
+POST Create Address
+  - localhost:3000/api/v1/contacts/1
+  Body: 
+  {
+   "addresses_attributes": [
+  	{
+  		"street": "3849  Ventura Drive",
+  		"city": "GREEN LANE",
+  		"state": "PA",
+  		"state_full": "Pennsylvania",
+  		"zip_code": "18054"
+  	},
+  	{
+ 		"street": "3849  Ventura Drive",
+  		"city": "GREEN LANE",
+  		"state": "PA",
+  		"state_full": "Pennsylvania",
+  		"zip_code": "18054"
+  	}
+  	]
+}
+```
+
