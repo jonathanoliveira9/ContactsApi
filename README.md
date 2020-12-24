@@ -84,5 +84,19 @@ POST Create Address
   	}
   	]
 }
+
+
+URL PUT - localhost:3000/api/v1/contacts/4
+DELETE Delete Address
+  Body:
+     {
+       "addresses_attributes": [
+        {
+
+         "id": "<id>",
+         "_destroy": "true"
+        }
+        ]
+     }
 ```
 
