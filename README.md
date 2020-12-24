@@ -33,6 +33,8 @@ Examples below:
 ```
 GET Contact List
   - localhost:3000/api/v1/contacts
+  Filter by Page
+   - localhost:3000/api/v1/contacts?page=1
 GET Contact
   - localhost:3000/api/v1/contacts/1
 POST Create Contact
