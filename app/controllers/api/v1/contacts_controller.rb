@@ -4,7 +4,7 @@ class Api::V1::ContactsController < Api::V1::ApiController
   
   def index
     @contacts = current_user.contacts
-    render json: @contacts
+    render json: pagy(@contacts, items: 10)
   end
 
   def show
