@@ -39,7 +39,7 @@ class Api::V1::ContactsController < Api::V1::ApiController
   end
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :phone, :description)
+    params.require(:contact).permit(:name, :email, :phone, :description, addresses_attributes: %i(id _destroy street city state state_full zip_code))
   end
 
   def require_authorization!
