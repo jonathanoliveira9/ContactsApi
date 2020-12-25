@@ -140,6 +140,15 @@ POST Create Address
   	]
 }
 
+PUT Update Addresses
+   - localhost:3000/api/v1/contacts/1
+   Body:
+   {
+     "addresses_attributes": [{
+      "id": "<id>",
+      "street": "Vance M"
+     }]
+   }
 
 URL PUT - localhost:3000/api/v1/contacts/4
 DELETE Delete Address
