@@ -62,7 +62,62 @@ DELETE Delete Contact
 ```
 ### Model: Address
 Address belongs to contact.
+
 ```
+GET List Addresses
+  - localhost:3000/api/v1/contacts/
+  Response:
+  {
+    "id": 2,
+    "name": "Madonna Rice II",
+    "email": "leeanne_stracke@vonrueden-davis.com",
+    "phone": "7820161526",
+    "description": "[\"Et sequi ad.\", \"Tempore corrupti quia.\", \"Dicta aut error.\"]",
+    "user_id": 1,
+    "created_at": "2020-12-24T21:07:07.028Z",
+    "updated_at": "2020-12-24T21:07:07.028Z",
+    "addresses": [
+        {
+            "id": 2,
+            "street": "Vance Mall",
+            "city": "Lake Jamieton",
+            "state": "Montana",
+            "state_full": null,
+            "zip_code": "27324",
+            "created_at": "2020-12-24T21:07:07.142Z",
+            "updated_at": "2020-12-24T21:07:07.142Z",
+            "contact_id": 2
+        }
+    ]
+}
+
+GET Address
+  - localhost:3000/api/v1/contacts/1
+  Response:
+  {
+    "id": 2,
+    "name": "Madonna Rice II",
+    "email": "leeanne_stracke@vonrueden-davis.com",
+    "phone": "7820161526",
+    "description": "[\"Et sequi ad.\", \"Tempore corrupti quia.\", \"Dicta aut error.\"]",
+    "user_id": 1,
+    "created_at": "2020-12-24T21:07:07.028Z",
+    "updated_at": "2020-12-24T21:07:07.028Z",
+    "addresses": [
+        {
+            "id": 2,
+            "street": "Vance Mall",
+            "city": "Lake Jamieton",
+            "state": "Montana",
+            "state_full": null,
+            "zip_code": "27324",
+            "created_at": "2020-12-24T21:07:07.142Z",
+            "updated_at": "2020-12-24T21:07:07.142Z",
+            "contact_id": 2
+        }
+    ]
+}
+
 POST Create Address
   - localhost:3000/api/v1/contacts/1
   Body: 
